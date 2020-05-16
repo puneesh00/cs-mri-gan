@@ -1,1 +1,1 @@
-# cs_mri_gan
+# cs-mri-gan
