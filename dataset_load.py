@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pickle
 
-save_path='/home/diencephalon'
+save_path='/home/diencephalon/'
 
 def load_a(path, num):
         f = os.listdir(path)
@@ -57,7 +57,7 @@ with open(os.path.join(save_path,'training_gt_aug.pickle'),'wb') as f:
 '''
 #for testing data
 test_path='/home/diencephalon/training-testing/warped-images'
-test_data,a=load_a(test_path, 5)
+test_data=load_a(test_path, 5)
 with open(os.path.join(save_path,'testing_gt.pickle'),'wb') as f:
        pickle.dump(test_data,f,protocol=4)
 '''
