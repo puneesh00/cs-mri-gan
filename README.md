@@ -22,7 +22,7 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 5. The 'masks' folder contains the undersampling masks used in this work. The path for the mask can be modified in the aformentioned file, as required.
 
 ### Training
-1. Run 'python train_model.py' to train the model, after checking the names of paths.
+1. Run 'python training_model.py' to train the model, after checking the names of paths.
 
 ### Testing
 1. The pre-trained weights are available here. Download them in the repository folder.
