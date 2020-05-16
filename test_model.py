@@ -16,7 +16,7 @@ from tensorflow.python.ops import array_ops
 from keras.initializers import RandomUniform
 
 data_path='/home/cs-mri-gan/testing_gt.pickle'
-usam_path='/home/cs-mri-gan/testing_usamp_1dg_a10.pickle'
+usam_path='/home/cs-mri-gan/testing_usamp_1dg_a5.pickle'
 
 df=open(data_path,'rb')
 uf=open(usam_path,'rb')
@@ -154,11 +154,11 @@ def generator(inp_shape, trainable = True):
 #to infer all the models after a run
 gen4 = generator(inp_shape = inp_shape, trainable = False)
 
-f = open('/home/cs-mri-gan/cs_mri_a10_metrics.txt', 'x')
-f = open('/home/cs-mri-gan/cs_mri_a10_metrics.txt', 'a')
+f = open('/home/cs-mri-gan/cs_mri_a5_metrics.txt', 'x')
+f = open('/home/cs-mri-gan/cs_mri_a5_metrics.txt', 'a')
 
 for i in range(10):
-   filename = '/home/cs-mri-gan/gen_weights_a10_%04d.h5' % (i+1)   
+   filename = '/home/cs-mri-gan/gen_weights_a5_%04d.h5' % (i+1)   
    gen4.load_weights(filename)
    out4 = gen4.predict(data_gen)
    psnr, ssim = metrics(data, out4[:,:,:,0],2.0)
@@ -170,7 +170,7 @@ for i in range(10):
 
 #to infer one model
 gen16 = generator(inp_shape = inp_shape, trainable = False)
-gen16.load_weights('/home/cs-mri-gan/gen_weights_a10_0010.h5')
+gen16.load_weights('/home/cs-mri-gan/gen_weights_a5_0010.h5')
 out16 = gen16.predict(data_gen)
 psnr, ssim = metrics(data, out16[:,:,:,0], 2.0)
 print(psnr,ssim)

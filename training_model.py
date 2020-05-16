@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 27 11:46:45 2019
-
-@author: bhavya
-"""
-
 from keras.utils import multi_gpu_model 
 import numpy as np
 import tensorflow as tf
@@ -252,7 +244,7 @@ def train(g_par, d_par, gan_model, dataset_real, u_sampled_data,  n_epochs, n_ba
             f.write('>%d, %d/%d, d=%.3f, acc = %.3f,  w=%.3f,  mae=%.3f,  mssim=%.3f, g=%.3f' %(i+1, j+1, bat_per_epo, d_loss, accuracy, g_loss[1], g_loss[2], g_loss[3], g_loss[0]))
             f.write('\n')
             print ('>%d, %d/%d, d=%.3f, acc = %.3f, g=%.3f' %(i+1, j+1, bat_per_epo, d_loss, accuracy, g_loss[0]))
-        filename = '/home/cs-mri-gan/gen_weights_a10_%04d.h5' % (i+1)
+        filename = '/home/cs-mri-gan/gen_weights_a5_%04d.h5' % (i+1)
         g_save = g_par.get_layer('model_3')
         g_save.save_weights(filename)
     f.close() 
@@ -283,7 +275,7 @@ gan_model.compile(loss = [wloss, 'mae', mssim], optimizer = opt1, loss_weights =
 n_patch=d_model.output_shape[1]
 
 data_path='/home/cs-mri-gan/training_gt_aug.pickle' #Ground truth
-usam_path='/home/cs-mri-gan/training_usamp_1dg_a10_aug.pickle' #Zero-filled reconstructions
+usam_path='/home/cs-mri-gan/training_usamp_1dg_a5_aug.pickle' #Zero-filled reconstructions
 
 df = open(data_path,'rb')
 uf = open(usam_path,'rb')
