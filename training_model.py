@@ -292,8 +292,8 @@ u_sampled_data_imag = u_sampled_data.imag
 
 u_sampled_data_2c = np.concatenate((u_sampled_data_real, u_sampled_data_imag), axis = -1)
 
-f = open('/home/cs-mri-gan/log_a10.txt', 'x')
-f = open('/home/cs-mri-gan/log_a10.txt', 'a') 
+f = open('/home/cs-mri-gan/log_a5.txt', 'x')
+f = open('/home/cs-mri-gan/log_a5.txt', 'a') 
 
 train(g_par, d_par, gan_model, dataset_real, u_sampled_data_2c, n_epochs, n_batch, n_critic, clip_val, n_patch, f)
 
