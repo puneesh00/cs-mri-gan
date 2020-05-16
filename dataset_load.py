@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pickle
 
-save_path='/home/diencephalon/'
+save_path='/home/cs-mri-gan/'
 
 def load_a(path, num):
         f = os.listdir(path)
@@ -46,7 +46,7 @@ def train_data_aug(train_gt):
     return gt_new
 
 #for training data
-train_path='/home/diencephalon/training-training/warped-images'
+train_path='/home/cs-mri-gan/training-training/warped-images'
 train_gt=load_a(train_path,1130)
 
 train_gt_aug=train_data_aug(train_gt) #created gt for augmented data
@@ -56,7 +56,7 @@ with open(os.path.join(save_path,'training_gt_aug.pickle'),'wb') as f:
 
 '''
 #for testing data
-test_path='/home/diencephalon/training-testing/warped-images'
+test_path='/home/cs-mri-gan/training-testing/warped-images'
 test_data=load_a(test_path, 5)
 with open(os.path.join(save_path,'testing_gt.pickle'),'wb') as f:
        pickle.dump(test_data,f,protocol=4)

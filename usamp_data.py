@@ -39,15 +39,15 @@ def usam_data_noise(accel, data_tensor, mask, noise_ratio):
     data = np.asarray(data)
     return data 
 
-save_path='/home/diencephalon/'
-mask_path='/home/diencephalon/mask_1dg_a10.pickle' #path for the required mask
+save_path='/home/cs-mri-gan/'
+mask_path='/home/cs-mri-gan/masks/mask_1dg_a10.pickle' #path for the required mask
 maf=open(mask_path,'rb')
 mask=pickle.load(maf)
 
 accel=10 #acceleration factor
 
 #creating undersampled training data
-train_path='/home/diencephalon/training_gt_aug.pickle'
+train_path='/home/cs-mri-gan/training_gt_aug.pickle'
 trf=open(train_path,'rb')
 train_data=pickle.load(trf)
 
@@ -67,7 +67,7 @@ with open(os.path.join(save_path,'training_usamp_1dg_a10_aug.pickle'),'wb') as f
 
 '''
 #creating undersampled testing data
-test_path='/home/diencephalon/testing_gt.pickle'
+test_path='/home/cs-mri-gan/testing_gt.pickle'
 tef=open(test_path,'rb')
 test_data=pickle.load(tef)
 
