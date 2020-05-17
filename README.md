@@ -9,6 +9,7 @@ The code was written with Python 3.6.8 with the following dependencies:
 * scikit-image 0.15.0
 * matplotlib 3.1.0
 * nibabel 2.4.1
+* cuDNN 7.4.1
 
 This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 Ti GPUs (each with 11 GB RAM).
 
