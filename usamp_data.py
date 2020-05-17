@@ -40,11 +40,11 @@ def usam_data_noise(accel, data_tensor, mask, noise_ratio):
     return data 
 
 save_path='/home/cs-mri-gan/'
-mask_path='/home/cs-mri-gan/masks/mask_1dg_a10.pickle' #path for the required mask
+mask_path='/home/cs-mri-gan/masks/mask_1dg_a5.pickle' #path for the required mask
 maf=open(mask_path,'rb')
 mask=pickle.load(maf)
 
-accel=10 #acceleration factor
+accel=5 #acceleration factor
 
 #creating undersampled training data
 train_path='/home/cs-mri-gan/training_gt_aug.pickle'
@@ -62,7 +62,7 @@ stack2 = np.vstack((train_data_new3, train_data_new4))
 stack3 = np.vstack((stack2, train_data_new5))
 fstack = np.vstack((stack1, stack3))
 
-with open(os.path.join(save_path,'training_usamp_1dg_a10_aug.pickle'),'wb') as f:
+with open(os.path.join(save_path,'training_usamp_1dg_a5_aug.pickle'),'wb') as f:
 	pickle.dump(fstack,f,protocol=4)
 
 '''
@@ -74,6 +74,6 @@ test_data=pickle.load(tef)
 train_data_new = usam_data(accel, test_data,mask) #for noise-free imgs
 #test_data_new=usam_data_noise(accel,test_data,mask,0.1) #for imgs with 10%noise
 #test_data_new=usam_data_noise(accel,test_data,mask,0.2) #for imgs with 20%noise
-with open(os.path.join(save_path,'testing_usamp_1dg_a10.pickle'),'wb') as f:
+with open(os.path.join(save_path,'testing_usamp_1dg_a5.pickle'),'wb') as f:
 	pickle.dump(test_data_new,f,protocol=4)
 '''
