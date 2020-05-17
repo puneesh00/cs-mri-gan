@@ -57,7 +57,7 @@ with open(os.path.join(save_path,'training_gt_aug.pickle'),'wb') as f:
 '''
 #for testing data
 test_path='/home/cs-mri-gan/training-testing/warped-images'
-test_data=load_a(test_path, 5)
+test_data=load_a(test_path, 390)
 with open(os.path.join(save_path,'testing_gt.pickle'),'wb') as f:
        pickle.dump(test_data,f,protocol=4)
 '''
