@@ -1,27 +1,24 @@
 <p align="center">
 This is the official implementation code for 
 </p>
-<h3 align="center">
+<h1 align="center">
   <a href="https://arxiv.org/abs/1910.06067">Structure Preserving Compressive Sensing MRI Reconstruction using Generative Adversarial Networks</a>
-</h3>
+</h1>
 <p align="center">
 by 
 </p>
-<h5 align="center">
-  <a href="https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en">Puneesh Deora^</a>&nbsp;&nbsp;
-  <a href="https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en">Bhavya Vasudeva^</a>&nbsp;&nbsp;
+<h3 align="center">
+  <a href="https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en">Puneesh Deora</a>^&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en">Bhavya Vasudeva</a>^&nbsp;&nbsp;
   <a href="https://scholar.google.com/citations?user=8pffuA4AAAAJ&hl=en">Saumik Bhattacharya</a>&nbsp;&nbsp;
   <a href="https://scholar.google.com/citations?user=_eIpqasAAAAJ&hl=en">Pyari Mohan Pradhan</a>&nbsp;&nbsp;
-</h5>
-<p align="left">
-(^ equal contribution)
-</p>
+</h3>
 <p align="center">
-accepted in 
+(^ equal contribution), accepted in 
 </p>
-<h5 align="center">
-The IEEE CVPR Workshop on <a href="https://data.vision.ee.ethz.ch/cvl/ntire20/">New Trends in Image Restoration and Enhancement (NTIRE)</a>2020
-</h5>
+<h3 align="center">
+The IEEE CVPR Workshop on <a href="https://data.vision.ee.ethz.ch/cvl/ntire20/">New Trends in Image Restoration and Enhancement (NTIRE)</a> 2020
+</h3>
 
 # Pre-requisites
 The code was written with Python 3.6.8 with the following dependencies:
@@ -50,7 +47,7 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 #### Testing the trained model:
 1. Run 'python test_model.py' to test the model, after checking the names of paths.
 #### Testing the pre-trained model:
-1. The pre-trained weights are available at: [20% undersampling](https://drive.google.com/open?id=1ygzSDA4V09qVhThiYJ606ec912BYjBfP), 30% undersampling. Download the required weights in the repository folder.
+1. The pre-trained weights are available at: [20% undersampling](https://drive.google.com/open?id=1ygzSDA4V09qVhThiYJ606ec912BYjBfP), [30% undersampling](https://drive.google.com/open?id=1j2PPdPT4nOgW8QmhgHJDjMarJUp6gvM6). Download the required weights in the repository folder.
 2. Run 'python test_model.py', after changing the names of paths.
 
 # Citation
