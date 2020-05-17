@@ -150,7 +150,7 @@ def generator(inp_shape, trainable = True):
 
    return model
 
-'''
+
 #to infer all the models after a run
 gen4 = generator(inp_shape = inp_shape, trainable = False)
 
@@ -165,12 +165,13 @@ for i in range(10):
    f.write('psnr = %.5f, ssim = %.7f' %(psnr, ssim))
    f.write('\n')
    print(psnr, ssim)
+
+
 '''
-
-
 #to infer one model
 gen16 = generator(inp_shape = inp_shape, trainable = False)
 gen16.load_weights('/home/cs-mri-gan/gen_weights_a5_0010.h5')
 out16 = gen16.predict(data_gen)
 psnr, ssim = metrics(data, out16[:,:,:,0], 2.0)
 print(psnr,ssim)
+'''
