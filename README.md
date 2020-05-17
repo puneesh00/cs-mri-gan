@@ -1,9 +1,9 @@
 <p align="center">
 This is the official implementation code for 
 </p>
-<h1 align="center">
+<h3 align="center">
   <a href="https://arxiv.org/abs/1910.06067">Structure Preserving Compressive Sensing MRI Reconstruction using Generative Adversarial Networks</a>
-</h1>
+</h3>
 <p align="center">
 by 
 </p>
