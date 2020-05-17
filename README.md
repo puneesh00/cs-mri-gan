@@ -16,7 +16,7 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 ## How to Use
 ### Preparing data
 1. The MICCAI 2013 grand challenge dataset can be downloaded from this [webpage](https://my.vanderbilt.edu/masi/workshops/). It is required to fill a google form and register be able to download the data.
-2. Download and save the training and testing data in training-training and training-testing folders, respectively, into the repository folder.
+2. Download and save the training-training and training-testing folders, which contain the training and testing data, respectively, into the repository folder.
 3. Run 'python dataset_load.py' to create the GT dataset.
 4. Run 'python usamp_data.py' to create the undersampled dataset. 
 5. The 'masks' folder contains the undersampling masks used in this work. The path for the mask can be modified in the aformentioned file, as required.
