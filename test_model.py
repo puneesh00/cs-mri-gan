@@ -157,7 +157,7 @@ gen4 = generator(inp_shape = inp_shape, trainable = False)
 f = open('/home/cs-mri-gan/cs_mri_a5_metrics.txt', 'x')
 f = open('/home/cs-mri-gan/cs_mri_a5_metrics.txt', 'a')
 
-for i in range(10):
+for i in range(300):
    filename = '/home/cs-mri-gan/gen_weights_a5_%04d.h5' % (i+1)   
    gen4.load_weights(filename)
    out4 = gen4.predict(data_gen)
@@ -170,7 +170,7 @@ for i in range(10):
 '''
 #to infer one model
 gen16 = generator(inp_shape = inp_shape, trainable = False)
-gen16.load_weights('/home/cs-mri-gan/gen_weights_a5_0010.h5')
+gen16.load_weights('/home/cs-mri-gan/gen_weights_a5_best.h5')
 out16 = gen16.predict(data_gen)
 psnr, ssim = metrics(data, out16[:,:,:,0], 2.0)
 print(psnr,ssim)
