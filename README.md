@@ -8,13 +8,13 @@ This is the official implementation code for
 by 
 </p>
 <h3 align="center">
-  <a href="https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en">Puneesh Deora</a>^&nbsp;&nbsp;
-  <a href="https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en">Bhavya Vasudeva</a>^&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en">Puneesh Deora</a>*&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en">Bhavya Vasudeva</a>*&nbsp;&nbsp;
   <a href="https://scholar.google.com/citations?user=8pffuA4AAAAJ&hl=en">Saumik Bhattacharya</a>&nbsp;&nbsp;
   <a href="https://scholar.google.com/citations?user=_eIpqasAAAAJ&hl=en">Pyari Mohan Pradhan</a>&nbsp;&nbsp;
 </h3>
 <p align="center">
-(^ equal contribution), accepted in 
+(* equal contribution), accepted in 
 </p>
 <h3 align="center">
 The IEEE CVPR Workshop on <a href="https://data.vision.ee.ethz.ch/cvl/ntire20/">New Trends in Image Restoration and Enhancement (NTIRE)</a> 2020
