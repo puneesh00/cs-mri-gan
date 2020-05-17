@@ -47,7 +47,7 @@ def train_data_aug(train_gt):
 
 #for training data
 train_path='/home/cs-mri-gan/training-training/warped-images'
-train_gt=load_a(train_path,1130)
+train_gt=load_a(train_path,1090)
 
 train_gt_aug=train_data_aug(train_gt) #created gt for augmented data
 
