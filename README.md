@@ -25,11 +25,13 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 1. Run 'python training_model.py' to train the model, after checking the names of paths.
 
 ### Testing
-1. The pre-trained weights are available here. Download them in the repository folder.
-2. Run 'python test_model.py' to test the model, after checking the names of paths.
+#### Testing the trained model:
+1. Run 'python test_model.py' to test the model, after checking the names of paths.
+#### Testing the pre-trained model:
+1. The pre-trained weights are available at: 20% undersampling, 30% undersampling. Download the required weights in the repository folder.
+2. Run 'python test_model.py', after changing the names of paths.
 
 # Citation
-
 ```
 @misc{deora2019structure,
     title={Structure Preserving Compressive Sensing MRI Reconstruction using Generative Adversarial Networks},
