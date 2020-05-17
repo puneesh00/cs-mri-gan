@@ -71,7 +71,7 @@ test_path='/home/cs-mri-gan/testing_gt.pickle'
 tef=open(test_path,'rb')
 test_data=pickle.load(tef)
 
-train_data_new = usam_data(accel, test_data,mask) #for noise-free imgs
+test_data_new = usam_data(accel, test_data,mask) #for noise-free imgs
 #test_data_new=usam_data_noise(accel,test_data,mask,0.1) #for imgs with 10%noise
 #test_data_new=usam_data_noise(accel,test_data,mask,0.2) #for imgs with 20%noise
 with open(os.path.join(save_path,'testing_usamp_1dg_a5.pickle'),'wb') as f:
