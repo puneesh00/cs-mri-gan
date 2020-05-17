@@ -1,15 +1,27 @@
 <p align="center">
 This is the official implementation code for 
-# [Structure Preserving Compressive Sensing MRI Reconstruction using Generative Adversarial Networks](https://arxiv.org/abs/1910.06067) 
-by 
-### [Puneesh Deora](https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en)^, [Bhavya Vasudeva](https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en)^, [Saumik Bhattacharya](https://scholar.google.com/citations?user=8pffuA4AAAAJ&hl=en), [Pyari Mohan Pradhan](https://scholar.google.com/citations?user=_eIpqasAAAAJ&hl=en)
-
-(^ equal contribution)
-
-accepted in 
-
-### The IEEE CVPR Workshop on [New Trends in Image Restoration and Enhancement (NTIRE)](https://data.vision.ee.ethz.ch/cvl/ntire20/) 2020
 </p>
+<h3 align="center">
+  <a href="https://arxiv.org/abs/1910.06067">Structure Preserving Compressive Sensing MRI Reconstruction using Generative Adversarial Networks</a>
+</h3>
+<p align="center">
+by 
+</p>
+<h5 align="center">
+  <a href="https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en">Puneesh Deora^</a>&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en">Bhavya Vasudeva^</a>&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=8pffuA4AAAAJ&hl=en">Saumik Bhattacharya</a>&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=_eIpqasAAAAJ&hl=en">Pyari Mohan Pradhan</a>&nbsp;&nbsp;
+</h5>
+<p align="left">
+(^ equal contribution)
+</p>
+<p align="center">
+accepted in 
+</p>
+<h5 align="center">
+The IEEE CVPR Workshop on <a href="https://data.vision.ee.ethz.ch/cvl/ntire20/">New Trends in Image Restoration and Enhancement (NTIRE)</a>2020
+</h5>
 
 # Pre-requisites
 The code was written with Python 3.6.8 with the following dependencies:
