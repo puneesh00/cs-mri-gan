@@ -36,12 +36,11 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 ## Citation
 If you find our research useful, please cite our work.
 ```
-@article{deora2019structure,
+@inproceedings{deora2019structure,
     title={Structure Preserving Compressive Sensing MRI Reconstruction using Generative Adversarial Networks},
     author={P. Deora and B. Vasudeva and S. Bhattacharya and P. M. Pradhan},
-    journal={ArXiv},
-    year={2019},
-    volume={abs/1910.06067}
+    booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops}
+    year={2020}
 }
 ```
 
