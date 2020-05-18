@@ -28,15 +28,22 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 5. The 'masks' folder contains the undersampling masks used in this work. The path for the mask can be modified in the aformentioned file, as required.
 
 ### Training
-1. Run 'python training_model.py' to train the model, after checking the names of paths.
-
+1. Run the following command to train the model, after checking the names of paths:
+```
+python training_model.py
+```
 ### Testing
 #### Testing the trained model:
-1. Run 'python test_model.py' to test the model, after checking the names of paths.
+1. Run the following command to test the model, after checking the names of paths:
+```
+python test_model.py
+```
 #### Testing the pre-trained model:
 1. The pre-trained generator weights are available at: [20% undersampling](https://drive.google.com/open?id=1ygzSDA4V09qVhThiYJ606ec912BYjBfP), [30% undersampling](https://drive.google.com/open?id=1j2PPdPT4nOgW8QmhgHJDjMarJUp6gvM6). Download the required weights in the repository folder. They can used to obtain the results as provided in the paper.
-2. Run 'python test_model.py', after changing the names of paths.
-
+2. Run the following command, after changing the names of paths:
+```
+python test_model.py
+```
 ## Citation
 If you find our research useful, please cite our work.
 ```
