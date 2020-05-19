@@ -23,13 +23,13 @@ This code has been tested in Ubuntu 16.04.6 LTS with 4 NVIDIA GeForce GTX 1080 T
 ### Preparing data
 1. Downloading the dataset:
 
-&nbsp; **MICCAI 2013 dataset:** 
+&nbsp; &nbsp; &nbsp; **MICCAI 2013 dataset:** 
 * The MICCAI 2013 grand challenge dataset can be downloaded from this [webpage](https://my.vanderbilt.edu/masi/workshops/). It is required to fill a google form and register be able to download the data.
-* Download and save the 'training-training' and 'training-testing' folders, which contain the training and testing data, respectively, into the repository folder.
+* Download and save the `training-training` and `training-testing` folders, which contain the training and testing data, respectively, into the repository folder.
 
-&nbsp; **MRNet dataset:** 
+&nbsp; &nbsp; &nbsp; **MRNet dataset:** 
 * The MRNet dataset can be downloading from this [webpage](https://stanfordmlgroup.github.io/competitions/mrnet/). It also requires to register by filling the form at the end of the page to be able to download the data.
-* Download and save the 'train' and 'valid' folders, which contain the training and testing data, respectively, into the repository folder.
+* Download and save the `train` and `valid` folders, which contain the training and testing data, respectively, into the repository folder.
 
 2. Run the following command to create the GT dataset:
 ```
