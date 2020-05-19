@@ -51,11 +51,12 @@ train_path='/home/cs-mri-gan/training_gt_aug.pickle'
 trf=open(train_path,'rb')
 train_data=pickle.load(trf)
 
-train_data_new = usam_data(accel, train_data[0:13461,:,:], mask) #nonoise
-train_data_new2 = usam_data_noise(accel, train_data[13461:13956,:,:], mask, 0.1) #10%noise-overlapping
-train_data_new3 = usam_data_noise(accel, train_data[13956:14451,:,:], mask, 0.2) #20%noise-overlapping
-train_data_new4 = usam_data_noise(accel, train_data[14451:17619,:,:,], mask, 0.1) #10%noise-nonoverlapping
-train_data_new5 = usam_data_noise(accel, train_data[17619:20787,:,:], mask, 0.2) #20%noise-nonoverlapping
+#for mrnet, replace the indices with the commented ones
+train_data_new = usam_data(accel, train_data[0:13461,:,:], mask)                  #0:8100       #nonoise
+train_data_new2 = usam_data_noise(accel, train_data[13461:13956,:,:], mask, 0.1)  #8100:8400    #10%noise-overlapping
+train_data_new3 = usam_data_noise(accel, train_data[13956:14451,:,:], mask, 0.2)  #8400:8700    #20%noise-overlapping
+train_data_new4 = usam_data_noise(accel, train_data[14451:17619,:,:,], mask, 0.1) #8700:10600   #10%noise-nonoverlapping
+train_data_new5 = usam_data_noise(accel, train_data[17619:20787,:,:], mask, 0.2)  #10600:12500  #20%noise-nonoverlapping
 
 stack1 = np.vstack((train_data_new,train_data_new2))
 stack2 = np.vstack((train_data_new3, train_data_new4))
