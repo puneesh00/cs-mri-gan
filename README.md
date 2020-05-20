@@ -6,6 +6,8 @@ This is the official implementation code for **[Structure Preserving Compressive
 > [Puneesh Deora](https://scholar.google.com/citations?user=cn1wdTUAAAAJ&hl=en)\*, [Bhavya Vasudeva](https://scholar.google.com/citations?user=ZCSsIokAAAAJ&hl=en)\*, [Saumik Bhattacharya](https://scholar.google.com/citations?user=8pffuA4AAAAJ&hl=en), [Pyari Mohan Pradhan](https://scholar.google.com/citations?user=_eIpqasAAAAJ&hl=en) <br>
 > (* equal contribution)
 
+<p align="left"><img width="99%" src="assets/ntire_gif.gif" /></p>
+
 ## Pre-requisites
 The code was written with Python 3.6.8 with the following dependencies:
 * cuda release 9.0, V9.0.176
